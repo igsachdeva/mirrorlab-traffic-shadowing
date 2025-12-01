@@ -395,7 +395,7 @@ Then, in another terminal (Windows cmd example):
 cd C:\mirrorlab-traffic-shadowing\mirrorlab
 
 docker run --rm -it ^
---network mirrorlab_default ^
+--network mirrorlab-traffic-shadowing-main_default ^
 -v "%cd%\load:/scripts" ^
 -e BASE_URL=http://proxy:8080 ^
 grafana/k6 run /scripts/k6-shadow.js
